@@ -56,6 +56,16 @@ export default function SmartCare() {
             <Text style={{textAlign: 'center', fontSize: 15, fontWeight: '500', color: '#000'}}>ระบบการแจ้งเตือน</Text>
             </View>
         </View>
+        <View style={styles.bannerwrap}>
+        <View style={styles.imform}>
+            <Image style={{width: 100, height: 100}} source={require('../../assets/icons/travel.png')} />
+            <Text style={{textAlign: 'center', fontSize: 15, fontWeight: '500', color: '#000', marginTop: 30,}}>ประวัติการเดินทาง</Text>
+            </View>
+            <View style={styles.imform}>
+            <Image style={{width: 130, height: 130}} source={require('../../assets/images/user.png')} />
+            <Text style={{textAlign: 'center', fontSize: 15, fontWeight: '500', color: '#000'}}>ข้อมูลฉัน</Text>
+            </View>
+        </View>
       </View>
     </ScrollView>
   );
@@ -64,6 +74,7 @@ const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 12,
     marginTop: 10,
+    marginBottom: 20,
   },
   imagesIcon: {
     flexDirection: 'row',
@@ -111,6 +122,13 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingHorizontal: 25,
     paddingVertical: 20,
+  },
+  imform: {
+    backgroundColor: '#e4e4e4',
+    borderRadius: 20,
+    paddingHorizontal: 21,
+    paddingVertical: 20,
+
   }
 
 });
