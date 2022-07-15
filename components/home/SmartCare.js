@@ -1,7 +1,7 @@
 import {View, Text, Image, StyleSheet, ScrollView, SafeAreaView} from 'react-native';
 import React from 'react';
 
-export default function SmartCare() {
+export default function SmartCare({ navigation }) {
   return (
     <ScrollView>
       <View style={styles.container}>
